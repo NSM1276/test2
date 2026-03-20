@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kfz Joker Autowerkstatt – Wien</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <span class="logo-icon">🃏</span>
+        <span class="logo-text">Kfz <strong>Joker</strong></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#ueber-uns">Über uns</a></li>
+        <li><a href="#bewertungen">Bewertungen</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+      <a href="tel:069911137350" class="btn-nav">Jetzt anrufen</a>
+      <button class="burger" id="burger" aria-label="Menü">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#leistungen" onclick="closeMobile()">Leistungen</a>
+    <a href="#ueber-uns" onclick="closeMobile()">Über uns</a>
+    <a href="#bewertungen" onclick="closeMobile()">Bewertungen</a>
+    <a href="#kontakt" onclick="closeMobile()">Kontakt</a>
+    <a href="tel:069911137350" class="btn-mobile">Jetzt anrufen</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="badge">Ihr Vertrauenspartner in Wien</div>
+      <h1>Kfz Joker<br /><span>Autowerkstatt</span></h1>
+      <p class="hero-sub">Professionelle Fahrzeugreparatur &amp; Instandhaltung – schnell, zuverlässig und fair.</p>
+      <div class="hero-rating">
+        <div class="stars">★★★★★</div>
+        <span><strong>4,8</strong> von 5 – 118 Bewertungen</span>
+      </div>
+      <div class="hero-btns">
+        <a href="tel:069911137350" class="btn-primary">📞 0699 11137350</a>
+        <a href="#leistungen" class="btn-secondary">Unsere Leistungen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO BAR -->
+  <div class="info-bar">
+    <div class="container info-bar-inner">
+      <div class="info-item">
+        <span class="info-icon">📍</span>
+        <div>
+          <small>Adresse</small>
+          <strong>Laxenburger Str. 11, 1100 Wien</strong>
+        </div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">🕗</span>
+        <div>
+          <small>Öffnungszeiten</small>
+          <strong>Mo–Fr 08:00 – 18:00</strong>
+        </div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">📞</span>
+        <div>
+          <small>Telefon</small>
+          <strong><a href="tel:069911137350">0699 11137350</a></strong>
+        </div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">⭐</span>
+        <div>
+          <small>Google Bewertung</small>
+          <strong>4,8 / 5 (118 Bewertungen)</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEISTUNGEN -->
+  <section class="section" id="leistungen">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Was wir bieten</span>
+        <h2>Unsere Leistungen</h2>
+        <p>Wir kümmern uns um Ihr Fahrzeug – von der Routineinspektion bis zur komplexen Reparatur.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🔧</div>
+          <h3>Allgemeine Reparaturen</h3>
+          <p>Motor, Getriebe, Fahrwerk – wir reparieren schnell und kompetent alle Fahrzeugtypen.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🛠️</div>
+          <h3>Instandhaltung &amp; Service</h3>
+          <p>Regelmäßige Wartung verlängert die Lebensdauer Ihres Fahrzeugs und erhöht die Sicherheit.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💨</div>
+          <h3>Luft- &amp; Innenraumfilter</h3>
+          <p>Austausch von Luft-, Öl- und Innenraumfiltern für optimale Motorleistung und Luftqualität.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔩</div>
+          <h3>Bremsanlage</h3>
+          <p>Prüfung und Instandsetzung von Bremsen – für Ihre Sicherheit auf Wiens Straßen.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔋</div>
+          <h3>Batterie &amp; Elektrik</h3>
+          <p>Batteriewechsel, Fehlerdiagnose und Reparatur elektrischer Systeme.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🚗</div>
+          <h3>Inspektion &amp; Pickerl</h3>
+          <p>§57a-Begutachtung und technische Überprüfung Ihres Fahrzeugs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÜBER UNS -->
+  <section class="section section-dark" id="ueber-uns">
+    <div class="container about-grid">
+      <div class="about-text">
+        <span class="section-tag">Wer wir sind</span>
+        <h2>Ihre Werkstatt mit Herz in Wien-Favoriten</h2>
+        <p>Kfz Joker Autowerkstatt steht für faire Preise, ehrliche Beratung und qualitativ hochwertige Arbeit. Unser erfahrenes Team behandelt Ihr Auto wie das eigene – mit Sorgfalt und Fachkompetenz.</p>
+        <p>Gelegen im 10. Bezirk an der Laxenburger Straße sind wir gut erreichbar und freuen uns auf Ihren Besuch – auch kurzfristig.</p>
+        <ul class="about-list">
+          <li>✅ Über 10 Jahre Erfahrung</li>
+          <li>✅ Alle Fahrzeugmarken</li>
+          <li>✅ Transparente Preise</li>
+          <li>✅ Schnelle Terminvergabe</li>
+        </ul>
+      </div>
+      <div class="about-visual">
+        <div class="about-card">
+          <div class="stat">4,8 ★</div>
+          <div class="stat-label">Google Bewertung</div>
+        </div>
+        <div class="about-card">
+          <div class="stat">118</div>
+          <div class="stat-label">Zufriedene Kunden</div>
+        </div>
+        <div class="about-card">
+          <div class="stat">10+</div>
+          <div class="stat-label">Jahre Erfahrung</div>
+        </div>
+        <div class="about-card">
+          <div class="stat">∞</div>
+          <div class="stat-label">Leidenschaft fürs Auto</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEWERTUNGEN -->
+  <section class="section" id="bewertungen">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Was Kunden sagen</span>
+        <h2>Kundenbewertungen</h2>
+        <p>Über 118 zufriedene Kunden auf Google – das spricht für sich.</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Super Werkstatt! Sehr freundlich, faire Preise und schnelle Arbeit. Komme immer wieder!"</p>
+          <div class="reviewer">— Thomas K.</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Habe mein Auto für die Inspektion gebracht – alles top erledigt, keine versteckten Kosten. Sehr empfehlenswert!"</p>
+          <div class="reviewer">— Maria S.</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Professionell und ehrlich. Das Joker Team hat das Problem sofort gefunden und günstig behoben. Danke!"</p>
+          <div class="reviewer">— Mehmet A.</div>
+        </div>
+      </div>
+      <div class="review-cta">
+        <p>⭐ <strong>4,8 von 5</strong> basierend auf 118 Google-Bewertungen</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="section section-accent" id="kontakt">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="section-tag">Kontakt &amp; Anfahrt</span>
+        <h2>So erreichen Sie uns</h2>
+        <div class="contact-details">
+          <div class="contact-row">
+            <span>📍</span>
+            <div>
+              <strong>Adresse</strong><br />
+              Laxenburger Str. 11<br />1100 Wien (10. Bezirk)
+            </div>
+          </div>
+          <div class="contact-row">
+            <span>📞</span>
+            <div>
+              <strong>Telefon</strong><br />
+              <a href="tel:069911137350">0699 11137350</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <span>🕗</span>
+            <div>
+              <strong>Öffnungszeiten</strong><br />
+              Montag – Freitag: 08:00 – 18:00 Uhr<br />
+              Samstag: nach Vereinbarung
+            </div>
+          </div>
+        </div>
+        <a href="tel:069911137350" class="btn-primary">Termin vereinbaren</a>
+      </div>
+      <div class="map-wrap">
+        <iframe
+          title="Kfz Joker Autowerkstatt Standort"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.8!2d16.3694!3d48.1734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da84a7d3b5b5b%3A0x0!2sLaxenburger+Str.+11%2C+1100+Wien!5e0!3m2!1sde!2sat!4v1"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🃏</span>
+        <span>Kfz <strong>Joker</strong> Autowerkstatt</span>
+      </div>
+      <p>Laxenburger Str. 11, 1100 Wien &nbsp;|&nbsp; <a href="tel:069911137350">0699 11137350</a></p>
+      <p class="footer-copy">&copy; 2025 Kfz Joker Autowerkstatt. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('mobileMenu');
+    burger.addEventListener('click', () => menu.classList.toggle('open'));
+    function closeMobile() { menu.classList.remove('open'); }
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>
